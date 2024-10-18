@@ -1,0 +1,100 @@
+/* Center the todo app in the viewport */
+body {
+    font-family: 'Copperplate', 'Times New Roman', Arial, Helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(109, 65, 161);
+}
+
+.todo-app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 80%;
+    overflow-y:scroll;
+    text-align: center;
+}
+
+input {
+    font-family: 'Lucida Console', 'Times New Roman', Arial, Helvetica;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-family: 'Copperplate', 'Times New Roman', Arial, Helvetica;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #dc3545;  /* Red for delete button */
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Flexbox layout for each todo item */
+li {
+    font-family: 'Lucida Console', 'Times New Roman', Arial, Helvetica;
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;  /* Space between the text and the buttons */
+    align-items: center;
+}
+
+li div {
+    display: flex;  /* Container for the buttons */
+    gap: 10px;      /* Space between buttons */
+}
+
+/* Style for the todo text */
+li span {
+    text-align: left;  /* Ensure the text starts from the left */
+    flex-grow: 1;      /* Make the text take available space without overflowing */
+    padding-right: 10px;  /* Add a small padding between the text and buttons */
+    overflow-y:scroll;
+}
+
+/* Ensure the input field during editing fits in the layout */
+input[type="text"] {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+ul {
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 50%;
+    overflow-y:scroll;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div id="login-form" class="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" style="font-family: 'Lucida Console', 'Times New Roman', Times, serif;"/>
+        <input type="password" id="password" placeholder="Password" style="font-family: 'Lucida Console','Times New Roman', Times, serif;"/>
+        <br/>
+        <button id="login-btn">Login</button>
+        <p>Don't have an account? <button style="background-color: rgb(210, 160, 50);"><span id="show-register">Register here</span></button></p>
+    </div>
+    <div id="register-form" style="display:none;" class="login-form">
+        <h2>Register</h2>
+        <input type="text" id="new-username" placeholder="Username" required style="font-family: 'Lucida Console', 'Times New Roman', Times, serif;">
+        <input type="password" id="new-password" placeholder="Password" required style="font-family: 'Lucida Console', 'Times New Roman', Times, serif;">
+        <br/>
+        <button id="register-btn" style="background-color: rgb(210, 160, 50);">Register</button>
+        <p>Already have an account? <br/><button><span id="show-login">Login here</span></button></p>
+    </div>
+    <div class="todo-app" id="todo-section" style="display: none;">
+        <h1>Todo List</h1>
+        <input type="text" id="todo-input" placeholder="Enter a todo">
+        <button id="add-btn" style="background-color: rgb(50, 210, 50);">Add Todo</button>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
