@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.json());
 // Replace the uri string with your connection string.
 const uri =
-  "mongodb+srv://joeyhooper10:MDAHM0wliI5O5c03@cluster0.3sf6i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://meanuser:cookies@cluster0.3sf6i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(uri);
 
@@ -22,7 +22,7 @@ async function run() {
     const query = { username: "Larrguy" };
     const user = await users.findOne(query);
 
-    console.log(user);
+    //console.log(user);
   } finally {
     // Ensures that the client will close when you finish/error
     //await client.close();
